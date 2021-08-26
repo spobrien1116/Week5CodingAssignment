@@ -13,5 +13,6 @@ public class AsteriskLogger implements Logger {
         for (int i = 0; i < error.length() + 13; i++) {
             System.out.print("*");
         }
+        System.out.println("");
     }
 }

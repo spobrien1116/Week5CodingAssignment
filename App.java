@@ -1,16 +1,13 @@
 public class App {
 
-    static Logger logger;
-
     public static void main(String[] args) {
-        Logger logger = new AsteriskLogger();
-        logger.log("Hello");
-        logger.error("Goodbye");
-        setLogger(new AsteriskLogger());
-        setLogger(new SpacedLogger());
-    }
-
-    private static void setLogger(Logger log) {
-        logger = log;
+        String log = "Hello";
+        String error = "Goodbye";
+        Logger asteriskLogger = new AsteriskLogger();
+        asteriskLogger.log(log);
+        asteriskLogger.error(error);
+        Logger spacedLogger = new SpacedLogger();
+        spacedLogger.log(log);
+        spacedLogger.error(error);
     }
 }
